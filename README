@@ -1,10 +1,9 @@
-docker-container-with-nginx-php-mariadb
+*docker-container-with-nginx-php-mariadb-and-reddis*
 Put the codebase in ./src
 run docker-compose up -d
 Access it on localhost
-make down - stop all containers
-make restart - restart all containers
-make in - gets inside php container
-xdebug-on - enable xdebug
-xdebug-off - disable xdebug
-Entrypoint: /var/www/html
+docker-compose stop - stop all containers
+docker-compose down - remove all containers
+docker exec -ti app bash - gets inside php container
+
+Entrypoint: /var/www/
